@@ -31,15 +31,20 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
-#navbar li a.active::after,
-#navbar li a:hover::after{
+ #navbar .active{
+    color:rgb(200, 116, 61);
+}
+#header #navbar li a.active::after,
+#header #navbar li a:hover::after{
     content: "";
-    width: 10%;
-    height: 2px;
+    width: 8%;
+    height: 3px;
     background-color: rgb(200, 116, 61);
     position: absolute;
-    bottom: -2px;
-    left: 30px;
+    bottom: 2px;
+    left: 155px;
+    color:rgb(200, 116, 61);
+    /* transition: 0.2s step-start; */
 }
 
 #header div{
@@ -64,5 +69,92 @@ body{
  color:aliceblue;
  text-decoration: none;
  font-size: 18px;
+ transition: 0.2s ease;
 }
+#header div ul li a:hover{
+    color: rgb(200, 116, 61);
+
+}
+#category #category-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+#category h2{
+    padding: 40px 0px 0px 60px;
+    font-weight: 700;
+    font-size:45px;
+    color:rgb(200, 116, 61) ;
+    font-style: italic;
+    position: relative;
+
+}
+#category #category-box .box{
+   height: 260px;
+   width: 260px;
+   border-radius: 50%;
+    background-color: pink;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 50px;
+
+}
+#category h2::after{
+    content: "";
+    width: 93%;
+    height: 3px;
+    background-color: rgb(200, 116, 61);
+    position: absolute;
+    bottom: -4px;
+    left: 100px;
+    color:rgba(200, 117, 61, 0.845);
+ 
+
+}
+/* #category {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+#category h2 {
+    padding: 40px 0px 10px 60px;
+    font-weight: 700;
+    font-size: 45px;
+    color: rgb(200, 116, 61);
+    font-style: italic;
+    position: relative;
+    display: inline-block;
+}
+
+#category h2::after{
+    content: "";
+    width: 93%;
+    height: 3px;
+    background-color: rgb(200, 116, 61);
+    position: absolute;
+    bottom: -4px;
+    left: 100px;
+    color:rgba(200, 117, 61, 0.845);
+ 
+
+}
+#category #category-box .box {
+    height: 150px;
+    width: 150px;
+    background: linear-gradient(to bottom right, #e9967a, #ffcc70);
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #131010;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+} */
+
+
+
 
