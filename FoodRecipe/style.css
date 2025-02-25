@@ -4,10 +4,65 @@
 }
 body{
     width: 100%;
+    background-color: #131010;
 
 }
 #header{
     display:flex;
     justify-content: space-between;
     align-items: center;
+    height: 13vh;
+    width: 100%;
+    /* background-color: orange; */
+    /* box-shadow: rgb(200, 116, 61) 0px 20px 20px -10px; */
+    box-shadow: rgb(200, 116, 61) 0px 13px 27px -5px, rgba(218, 224, 36) 0px 8px 16px -8px;
+    
 }
+#navbar{
+    position: relative;
+}
+#header #logo{
+    width: 20%;
+    height: 11vh;
+    background-color: palegoldenrod;
+    margin-left: 20px;
+    background-image: url("Photos/logo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 10%;
+    height: 2px;
+    background-color: rgb(200, 116, 61);
+    position: absolute;
+    bottom: -2px;
+    left: 30px;
+}
+
+#header div{
+
+    width:70%;
+    /* background-color: pink; */
+}
+
+#header div ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:10px 0 10px 0px;
+  
+}
+
+#header div ul li{
+    list-style: none;
+   
+}
+#header div ul li a{
+ color:aliceblue;
+ text-decoration: none;
+ font-size: 18px;
+}
+
