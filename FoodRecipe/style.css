@@ -81,8 +81,9 @@ body{
     gap: 20px;
     justify-content: center;
     margin-top: 20px;
+    position: relative;
 }
-#category h2{
+#category #title{
     padding: 40px 0px 0px 60px;
     font-weight: 700;
     font-size:45px;
@@ -99,9 +100,10 @@ body{
     margin-left: 20px;
     margin-right: 10px;
     margin-top: 50px;
+    position: relative;
 
 }
-#category h2::after{
+#category #title::after{
     content: "";
     width: 93%;
     height: 3px;
@@ -155,6 +157,19 @@ body{
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 } */
 
-
+#category #category-box  h2{
+    position: absolute;
+    color:yellow;
+ top:270px;
+    left:75px;
+  
+  
+}
+#category #category-box #one{
+    background-image: url("Photos/category/breakfast.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 

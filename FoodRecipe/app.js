@@ -24,6 +24,9 @@ let input=document.getElementById("input");
 // console.log(food);
 
 let btn = document.getElementById("btn");
+let head = document.getElementById("head");
+let middle = document.getElementById("middle");
+let body = document.getElementById("body");
 // btn.addEventListener("click",()=>{
 //     let food = input.value;
 //   alert(food);
@@ -36,7 +39,7 @@ async function getRecipe(food){
 .then( response => response.json())
 .then(data=>{
     if(!data.meals){
-        console.log("No meals");
+      head.innerText="result not found";
         return;
     }
     const meal = data.meals[0];
@@ -48,6 +51,9 @@ async function getRecipe(food){
     console.log("Meal name:",mealName);
     console.log("Category:",category);
     console.log("instruction:",instructions);
+    head.innerText=mealName;
+    middle.innerText=category;
+    body.innerText=instructions;
 
 })
 }
