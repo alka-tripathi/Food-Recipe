@@ -84,7 +84,7 @@ body{
     position: relative;
 }
 #category #title{
-    padding: 40px 0px 0px 60px;
+    padding: 70px 0px 0px 70px;
     font-weight: 700;
     font-size:45px;
     color:rgb(200, 116, 61) ;
@@ -96,22 +96,26 @@ body{
    height: 260px;
    width: 260px;
    border-radius: 50%;
-    background-color: pink;
+    /* background-color: pink; */
     margin-left: 20px;
     margin-right: 10px;
     margin-top: 50px;
     position: relative;
+    /* box-shadow: 5px 5px 15px rgba(214, 99, 10, 0.2); */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
 
 }
 #category #title::after{
     content: "";
     width: 93%;
-    height: 3px;
+    height: 2px;
     background-color: rgb(200, 116, 61);
     position: absolute;
     bottom: -4px;
-    left: 100px;
+    left:100px;
     color:rgba(200, 117, 61, 0.845);
+    margin-top: 40px;
  
 
 }
@@ -157,19 +161,127 @@ body{
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 } */
 
-#category #category-box  h2{
+#category #category-box .box:hover{
+    transition: 0.5s ease;
+    scale:1.07;
+ 
+}
+
+
+#category #category-box .food-name{
     position: absolute;
-    color:yellow;
- top:270px;
-    left:75px;
+    color:rgb(200, 116, 61);
+   top:270px;
+    left:95px;
   
   
 }
 #category #category-box #one{
+    background-image: url("Photos/category/seafood.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0 0 0 30px;
+}
+#category #category-box #two{
+    background-image: url("Photos/category/meat.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0 0 0 30px;
+}
+#category #category-box #three{
+    background-image: url("Photos/category/pizza.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0 0 0 30px;
+}
+#category #category-box #four{
+    background-image: url("Photos/category/pancake.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0 0 0 30px;
+}
+#category #category-box #five{
+    background-image: url("Photos/category/dips.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0 0 0 30px;
+}
+#category #category-box #six{
+    background-image: url("Photos/category/sandwich.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0 0 0 30px;
+}
+#category #category-box #seven{
+    background-image: url("Photos/category/salad.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0 0 0 30px;
+}
+#category #category-box #eight{
+    background-image: url("Photos/category/soup.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0 0 0 30px;
+}
+#category #category-box #nine{
+    background-image: url("Photos/category/smoothie.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0 0 0 30px;
+}
+
+#category #category-box #ten{
+    background-image: url("Photos/category/pastries.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0 0 0 30px;
+}
+#category #category-box #eleven{
+    background-image: url("Photos/category/vegan.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0 0 0 30px;
+}
+#category #category-box #twelve{
+    background-image: url("Photos/category/waffle.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0 0 0 30px;
+}
+#category #category-box #thirteen{
+    background-image: url("Photos/category/dessert.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0 0 0 30px;
+}
+#category #category-box #fourteen{
     background-image: url("Photos/category/breakfast.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position:0 0 0 30px;
 }
+#category #category-box #fifteen{
+    background-image: url("Photos/category/burger.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0 0 0 30px;
+}
+
 
 
