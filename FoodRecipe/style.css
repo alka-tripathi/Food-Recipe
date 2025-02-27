@@ -283,5 +283,32 @@ body{
     background-position:0 0 0 30px;
 }
 
+/* footer */
+#footer{
+    height: 40vh;
+    background-color: #2b2828;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+
+}
+.section-p1{
+    padding:40px 80px;
+    margin-top: 100px;
+}
+#footer #footer-one {
+    display: flex;
+    flex-direction: column;
+}
+#footer #footer-one img{
+    height: 130px;
+    width: 200px;
+  
+
+
+}
+
 
 
