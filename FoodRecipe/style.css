@@ -36,8 +36,8 @@ body{
  #navbar .active{
     color:rgb(200, 116, 61);
 }
-#header #navbar li a.active::after,
-#header #navbar li a:hover::after{
+#header #navbar li a.active::after
+{
     content: "";
     width: 8%;
     height: 3px;
@@ -327,4 +327,55 @@ body{
 }
 
 
-
+/* food recipe */
+#search{
+    width: 100%;
+ height: 20vh;
+ margin-top: 30px;
+    background-color: pink;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-evenly;
+   text-align: center;
+}
+#search .search-input  {
+    width: 100%;
+}
+#search .search-input form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#search .search-input form input{
+width: 40%;
+height:7vh;
+border: none;
+outline: none;
+border-top-left-radius: 16px;
+border-bottom-left-radius: 16px;
+padding-left: 12px;
+}
+#search .search-input h1{
+    color: white;
+    font-size:45px;
+    padding-bottom: 10px;
+}
+#search .search-input form input:focus{
+    /* border: 1px solid rgb(200, 116, 61); */
+    box-shadow: rgb(200, 116, 61) 0px 48px 100px 0px;
+}
+#search .search-input form button{
+    height: 7vh;
+    width:7%;
+    border: none;
+outline: none;
+border-top-right-radius: 16px;
+border-bottom-right-radius: 16px;
+background: transparent;
+background-color:rgb(200, 116, 61);
+font-size: 16px;
+font-family: 500;
+color: white;
+cursor: pointer;
+}

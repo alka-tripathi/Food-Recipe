@@ -4,17 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     
-    <input type="text" placeholder="enter food Recipe" id="input">
+    <!-- <input type="text" placeholder="enter food Recipe" id="input">
     <button id="btn">search</button>
     <div>
         <h1 id="head"></h1>
         <h2 id="middle"></h2>
         <p id="body"></p>
+    </div> -->
+
+    <section id="header">
+        <div id="logo"></div>
+    
+        <div>
+            <ul id="navbar">
+                <li><a href="#" >Home</a></li>
+                <li><a href="#" class="active">Recipe</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="search">
+    <div class="search-input">
+        <h1>Find Your Recipe</h1>
+        <form action="">
+        <input type="text" placeholder="Find Your Favroute Recipe" id="input">
+        <button> Search</button>
+    </form>
     </div>
+    <div class="details">
+        <h1 id="head"></h1>
+        <h2 id="middle"></h2>
+        <p id="body"></p>
+
+    </div>
+    </section>
     <script src="app.js"></script>
 </body>
 </html>
