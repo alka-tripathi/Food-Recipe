@@ -29,6 +29,7 @@ let middle = document.getElementById("middle");
 let body = document.getElementById("body");
 let form = document.getElementById("search-form");
 let details=document.getElementById("box");
+let find = document.getElementById("find");
 // btn.addEventListener("click",()=>{
 //     let food = input.value;
 //   alert(food);
@@ -68,7 +69,8 @@ async function getRecipe(food){
 }
 btn.addEventListener("click",()=>{
     const food = input.value; 
-    details.classList.add("details");
+    find.classList.add("hide");
+    details.classList.add("box-border");
     name.classList.add("vis");
     inst.classList.add("vis");
     cat.classList.add("vis");

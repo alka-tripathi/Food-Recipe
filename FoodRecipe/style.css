@@ -4,6 +4,7 @@
 }
 body{
     width: 100%;
+    height: 100%;
     background-color: #131010;
 
 }
@@ -341,7 +342,7 @@ body{
 }
 #search .search-input  {
     width: 100%;
-    font-size: 20px;
+    font-size: 25px;
 }
 #search .search-input form{
     display: flex;
@@ -360,7 +361,10 @@ padding-left: 12px;
 #search .search-input h1{
     color: white;
     font-size:45px;
-    padding-bottom: 10px;
+padding:20px 0px 20px 0px;
+}
+#search .search-input h1 span{
+    color:rgb(200, 116, 61);
 }
 #search .search-input form input:focus{
     /* border: 1px solid rgb(200, 116, 61); */
@@ -383,35 +387,27 @@ cursor: pointer;
 }
 
 #search .details{
-    margin-top: 10px;
+    margin-top:20px;
   
     color:white;
     line-height: 2;
-    /* height: 100Vh; */
+    height: 100Vh;
     width: 60%;
-    border:1px solid white;
+    /* border:1px solid white; */
     display: flex;
     flex-direction: column;
-  justify-content: center;
-    visibility: hidden;
-  
+  justify-content: center; 
+
+ 
 }
 
-/* .det-visible{
-    color:white;
-    line-height: 2;
-  
-    margin-top:30px;
+.box-border{
+    height: 120Vh;
     width: 60%;
     border:1px solid white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    visibility: visible;
-    padding:10px 20px 10px 20px;
-   
-} */
+}
+
+
 .vis{
     visibility: visible;
     font-size: 20px;
@@ -427,7 +423,7 @@ cursor: pointer;
     font-weight:700;
     padding:10px 0px 10px 20px;
     text-decoration: double;
-    
+
 }
 
 #search .details .data{
