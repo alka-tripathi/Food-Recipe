@@ -28,11 +28,15 @@ let head = document.getElementById("head");
 let middle = document.getElementById("middle");
 let body = document.getElementById("body");
 let form = document.getElementById("search-form");
+let details=document.getElementById("box");
 // btn.addEventListener("click",()=>{
 //     let food = input.value;
 //   alert(food);
 // })
 // const food = input.value;
+let name=document.getElementById("name");
+let cat = document.getElementById("cat");
+let inst = document.getElementById('inst');
 form.addEventListener("submit", (event) => {
     event.preventDefault();
 });
@@ -64,9 +68,13 @@ async function getRecipe(food){
 }
 btn.addEventListener("click",()=>{
     const food = input.value; 
-    head.classList.add("details");
-    middle.classList.add("details");
-    body.classList.add("details");
+    details.classList.add("details");
+    name.classList.add("vis");
+    inst.classList.add("vis");
+    cat.classList.add("vis");
+    head.classList.add("data");
+    middle.classList.add("data");
+    body.classList.add("data");
     getRecipe(food);
 
 })
