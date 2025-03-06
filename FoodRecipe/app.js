@@ -51,11 +51,12 @@ async function getRecipe(food){
     if(!data.meals){
       notfound.innerText=`result not found ${food}`;
       notfound.classList.add("alert");
+
     name.classList.add("hide");
     cat.classList.add("hide");
     inst.classList.add("hide");
 
-        return;
+       
     }
     const meal = data.meals[0];
 //    console.log(data);
@@ -79,6 +80,8 @@ btn.addEventListener("click",()=>{
         alert("Enter Recipe first!");
         return;
     }
+    // notfound.classList.add("hide");
+
     find.classList.add("hide");
     details.classList.add("box-border");
     name.classList.add("vis");
