@@ -30,6 +30,7 @@ let body = document.getElementById("body");
 let form = document.getElementById("search-form");
 let details=document.getElementById("box");
 let find = document.getElementById("find");
+let notfound = document.getElementById("not-found");
 // btn.addEventListener("click",()=>{
 //     let food = input.value;
 //   alert(food);
@@ -48,7 +49,12 @@ async function getRecipe(food){
 .then( response => response.json())
 .then(data=>{
     if(!data.meals){
-      head.innerText="result not found";
+      notfound.innerText=`result not found ${food}`;
+      notfound.classList.add("alert");
+    name.classList.add("hide");
+    cat.classList.add("hide");
+    inst.classList.add("hide");
+
         return;
     }
     const meal = data.meals[0];
@@ -69,9 +75,14 @@ async function getRecipe(food){
 }
 btn.addEventListener("click",()=>{
     const food = input.value; 
+    if(food ===""){
+        alert("Enter Recipe first!");
+        return;
+    }
     find.classList.add("hide");
     details.classList.add("box-border");
     name.classList.add("vis");
+    heading.classList.add("hide");
     inst.classList.add("vis");
     cat.classList.add("vis");
     head.classList.add("data");

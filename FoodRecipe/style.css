@@ -385,12 +385,19 @@ font-family: 500;
 color: white;
 cursor: pointer;
 }
-
+#search .search-input #find{
+    color: white;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+#search .search-input #find span{
+    color: rgb(200, 116, 61);
+}
 #search .details{
     margin-top:20px;
   
     color:white;
-    line-height: 2;
+    line-height:1.1;
     height: 100Vh;
     width: 60%;
     /* border:1px solid white; */
@@ -413,8 +420,16 @@ cursor: pointer;
     font-size: 20px;
 
 }
-
-
+#search 
+.hide{
+    visibility: hidden;
+}
+.alert{
+    color:red;
+    padding-top: 20px;
+    text-align: center;
+    /* border-color: #131010; */
+}
 
 
 #search .details span{
